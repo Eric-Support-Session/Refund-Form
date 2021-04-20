@@ -10,6 +10,11 @@
 form { 
   display: block;
   margin-top: 0em;
+  background-color: #009cde;
+  background-image: radial-gradient(circle, #009cde, #926fd6, #003087 115%);
+  padding: 48px 24px;
+  color: #FFF;
+  text-align: center;
 }
 </style>
 <body>
@@ -20,15 +25,25 @@ form {
   <input type="text" id="fname" name="fname"><br><br>
   <label for="lname">Last name:</label>
   <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-</form>
-    <form action="/action_page.php" method="get">
+
+
   <input type="radio" id="male" name="gender" value="male">
   <label for="male">Male</label><br>
   <input type="radio" id="female" name="gender" value="female" checked="checked">
   <label for="female">Female</label><br>
   <input type="radio" id="other" name="gender" value="other">
   <label for="other">Other</label><br><br>
+  <textarea rows="5" cols="60" name="Discription">
+      Enter Details here.....
+  </textarea><br>
+  <br>
+  <br>
+  <input type="checkbox" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" name="vehicle3" value="Boat" checked>
+  <label for="vehicle3"> I have a boat</label><br><br>
   <input type="submit" value="Submit">
 </form>
 
@@ -37,5 +52,3 @@ server called "action_page.php".</p>
     
 </body>
 </html>
-
-
